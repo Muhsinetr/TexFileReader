@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            const abcd = new XMLHttpRequest();
+
+            abcd.onload = function(){
+                const muhu = this.responseText
+                console.log(muhu)
+            }
+
+            abcd.open('GET','hello.txt',true)
+            abcd.send();
+        </script>
+    </body>
+</html>
